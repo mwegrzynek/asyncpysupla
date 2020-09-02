@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 
 setup(
     name='asyncpysupla',
@@ -14,7 +14,7 @@ setup(
     long_description_content_type="text/markdown",
     author='Michal Wegrzynek',
     author_email='michal.wegrzynek@malloc.com.pl',
-    url='https://github.com/mwegrzynek/pysupla',
+    url='https://github.com/mwegrzynek/asyncpysupla',
     license='Apache License',
     version=VERSION,
     classifiers=[

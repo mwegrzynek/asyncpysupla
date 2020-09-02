@@ -1,9 +1,6 @@
 '''
 Channel API testing
 '''
-import asyncio
-
-
 import pytest
 
 
@@ -50,4 +47,5 @@ async def test_close_shutters(api, SHUTTER_ID):
 @pytest.mark.asyncio
 async def test_get_channels_with_devices_and_state(api):
     channels = await api.get_channels(include=["iodevice", "state", "connected"])
+
     assert 'connected' in channels[0]['state']
