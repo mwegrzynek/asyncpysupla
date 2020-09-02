@@ -11,11 +11,16 @@ log = logging.getLogger(__name__)
 
 class SuplaAPI:
 
-    def __init__(self, server, personal_access_token):
+    def __init__(
+        self,
+        server: str,
+        personal_access_token: str,
+        session: aiohttp.ClientSession = None,
+    ):
         self.server = server
         self.base_url = 'https://{}/api/v2.3.0/'.format(server)
         self.personal_access_token = personal_access_token
-        self._session = None
+        self._session = session
 
     def session(self):
         if self._session is None:
