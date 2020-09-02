@@ -1,9 +1,9 @@
 AsyncPySupla
-=======
+============
 
 A simplistic (and incomplete!) async wrapper for [Supla's OpenAPI](https://cloud.supla.org/api/docs.html), used mainly for [HomeAssistant](https://www.home-assistant.io/) integration.
 
-This [PySupla's](https://github.com/mwegrzynek/pysupla) sister library.
+This is [PySupla's](https://github.com/mwegrzynek/pysupla) sister library.
 
 I'm in no way affiliated with Supla and Zamel: I love their devices, but prefer to use all my Smart Home devices from one app.
 

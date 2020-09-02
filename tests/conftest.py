@@ -16,7 +16,7 @@ def SHUTTER_ID():
     return int(os.environ['SUPLA_SHUTTER_ID'])
 
 @pytest.fixture
-async def api(SERVER, PERSONAL_ACCESS_TOKEN):
+async def api(SERVER, PERSONAL_ACCESS_TOKEN, loop):
     from asyncpysupla import SuplaAPI
 
     api = SuplaAPI(
