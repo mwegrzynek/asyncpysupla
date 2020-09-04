@@ -38,7 +38,7 @@ class SuplaAPI:
 
         headers["Authorization"] = f"Bearer {self.personal_access_token}"
 
-        return await self.websession.request(
+        return await self.session.request(
             method, urljoin(self.base_url, path), **kwargs, headers=headers,
         )
 
